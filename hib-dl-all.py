@@ -12,7 +12,8 @@ parser.add_argument('-p', metavar='hunter2', help='your humblebundle.com passwor
 parser.add_argument('-d', metavar='DIRECTORY', help='your games will be saved here', dest='directory', default='.')
 
 args = parser.parse_args()
-if(args.keys == None and args.username == None):
+#if(args.keys == None and args.username == None):
+if(args.username == None):
     parser.print_help()
     exit(1)
 
